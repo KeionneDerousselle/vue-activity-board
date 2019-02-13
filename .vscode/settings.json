@@ -1,0 +1,37 @@
+{
+  // Spacing
+  "editor.insertSpaces": true,
+  "editor.rulers": [
+    80
+  ],
+  "editor.tabSize": 2,
+  "editor.trimAutoWhitespace": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  // JS(ON)
+  "jest.autoEnable": false,
+  "jest.enableCodeLens": false,
+  "eslint.options": {
+    "configFile": "./.eslintrc.js"
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+  ],
+  "javascript.format.enable": false,
+  "json.format.enable": true,
+  "vetur.validation.script": false,
+  // CSS
+  "stylelint.enable": true,
+  "css.validate": false,
+  "vetur.validation.style": false,
+  // MARKDOWN
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80
+  }
+}
