@@ -1,0 +1,26 @@
+{
+  "test": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
+  },
+  "development": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
+  },
+  "stage": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": true
+    },
+    "ssl": true
+  },
+  "prod": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": true
+    },
+    "ssl": true
+  }
+}
