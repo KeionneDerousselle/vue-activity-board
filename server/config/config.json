@@ -3,7 +3,11 @@
     "use_env_variable": "DATABASE_URL",
     "dialect": "postgres"
   },
-  "development": {
+  "local": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
+  },
+  "dev": {
     "use_env_variable": "DATABASE_URL",
     "dialect": "postgres"
   },

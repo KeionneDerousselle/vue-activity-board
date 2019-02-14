@@ -4,7 +4,7 @@ require('dotenv').config({ path: path.join(__dirname, '../.env') })
 const fs = require('fs')
 const Sequelize = require('sequelize')
 const basename = path.basename(__filename)
-const env = process.env.NODE_ENV || 'development'
+const env = process.env.NODE_ENV || 'local'
 const config = require(path.join(__dirname, '/../config/config.json'))[env]
 const db = {}
 

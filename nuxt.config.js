@@ -3,6 +3,10 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
 
+  env: {
+    NODE_ENV: process.env.NODE_ENV || 'local'
+  },
+
   /*
   ** Headers of the page
   */
@@ -29,7 +33,11 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/antd-ui'],
+  plugins: [
+    '@/plugins/antd-ui',
+    '@/plugins/globalVars.js',
+    '@/plugins/axios.js'
+  ],
 
   /*
   ** Nuxt.js modules

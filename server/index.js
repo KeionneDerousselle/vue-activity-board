@@ -7,7 +7,7 @@ const cors = require('cors')
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
-config.dev = !(process.env.NODE_ENV === 'production')
+config.dev = !(process.env.NODE_ENV === 'prod')
 
 async function start() {
   // Init Nuxt.js
