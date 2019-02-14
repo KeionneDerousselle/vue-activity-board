@@ -25,6 +25,10 @@
           <a-card-meta
             :title="item.name"
             :description="item.desc" />
+          <a-rate
+            :default-value="item.rating"
+            allow-half
+            disabled />
         </a-card>
       </a-col>
     </a-row>
