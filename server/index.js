@@ -5,8 +5,6 @@ const { Nuxt, Builder } = require('nuxt')
 const app = express()
 const cors = require('cors')
 
-var activitiesRouter = require('./routes/activities')
-
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
 config.dev = !(process.env.NODE_ENV === 'production')
@@ -26,7 +24,7 @@ async function start() {
   app.use(cors())
   app.use(express.json())
   app.use(express.urlencoded({ extended: false }))
-  app.use('/api', activitiesRouter)
+  app.use('/api', require('./routes'))
   // Give nuxt middleware to express
   app.use(nuxt.render)
 
