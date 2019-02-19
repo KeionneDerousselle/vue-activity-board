@@ -1,4 +1,5 @@
 require('dotenv').config({ path: './env' })
+var cloudinary = require('cloudinary')
 const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
