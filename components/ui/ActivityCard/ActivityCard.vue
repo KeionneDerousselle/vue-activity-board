@@ -5,7 +5,8 @@
     <responsive-image
       slot="cover"
       class="cover-image"
-      :cloudinary-public-id="activity.cloudinaryPublicId" />
+      :cloudinary-public-id="activity.cloudinaryPublicId"
+      :sizes="cardImgHeightByBreakpoint" />
     <a-card-meta>
       <template slot="title">
         <div class="card--title">
@@ -34,6 +35,18 @@ export default {
     activity: {
       type: Object,
       required: true
+    }
+  },
+  data() {
+    return {
+      cardImgHeightByBreakpoint: {
+        xs: 331,
+        sm: 441,
+        md: 213,
+        lg: 277,
+        xl: 216,
+        xxl: 220
+      }
     }
   }
 }

@@ -37,7 +37,7 @@ module.exports = {
     '@/plugins/antd-ui',
     '@/plugins/globalVars.js',
     '@/plugins/axios.js',
-    { src: '@/plugins/test.js', ssr: false }
+    { src: '@/plugins/responsive.js', ssr: false }
   ],
 
   /*

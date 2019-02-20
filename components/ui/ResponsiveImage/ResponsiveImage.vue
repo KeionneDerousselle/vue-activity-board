@@ -12,6 +12,10 @@ export default {
       type: String,
       required: false,
       default: ''
+    },
+    sizes: {
+      type: Object,
+      required: true
     }
   },
   data() {
@@ -26,14 +30,16 @@ export default {
   computed: {
     url() {
       let url = ''
+
       if (this.cloudinary && this.cloudinaryPublicId) {
         url = this.cloudinary.url(this.cloudinaryPublicId, {
           width: 'auto',
-          height: 200,
+          height: this.sizes[this.breakpoint],
+          aspect_ratio: '13:9',
           crop: 'fill'
         })
       }
-      console.log('url: ', url)
+
       return url
     }
   },
