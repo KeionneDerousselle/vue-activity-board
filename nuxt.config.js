@@ -1,10 +1,10 @@
 const pkg = require('./package')
-
 module.exports = {
   mode: 'universal',
 
   env: {
-    NODE_ENV: process.env.NODE_ENV || 'local'
+    NODE_ENV: process.env.NODE_ENV || 'local',
+    CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME
   },
 
   /*
@@ -36,7 +36,8 @@ module.exports = {
   plugins: [
     '@/plugins/antd-ui',
     '@/plugins/globalVars.js',
-    '@/plugins/axios.js'
+    '@/plugins/axios.js',
+    { src: '@/plugins/test.js', ssr: false }
   ],
 
   /*

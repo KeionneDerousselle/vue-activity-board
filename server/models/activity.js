@@ -7,8 +7,8 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false
       },
-      imageUrl: {
-        type: DataTypes.STRING(500),
+      cloudinaryPublicId: {
+        type: DataTypes.STRING,
         allowNull: true
       },
       desc: {
